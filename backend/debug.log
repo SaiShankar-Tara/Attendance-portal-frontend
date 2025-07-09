@@ -2804,3 +2804,4 @@ WARNING 2025-07-09 18:13:21,738 log Bad Request: /api/auth/login/admin/
 WARNING 2025-07-09 18:13:21,741 basehttp "POST /api/auth/login/admin/ HTTP/1.1" 400 36
 WARNING 2025-07-09 18:13:32,097 log Bad Request: /api/auth/login/admin/
 WARNING 2025-07-09 18:13:32,102 basehttp "POST /api/auth/login/admin/ HTTP/1.1" 400 36
+INFO 2025-07-09 23:18:22,577 autoreload Watching for file changes with StatReloader
