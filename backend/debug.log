@@ -2805,3 +2805,119 @@ WARNING 2025-07-09 18:13:21,741 basehttp "POST /api/auth/login/admin/ HTTP/1.1" 
 WARNING 2025-07-09 18:13:32,097 log Bad Request: /api/auth/login/admin/
 WARNING 2025-07-09 18:13:32,102 basehttp "POST /api/auth/login/admin/ HTTP/1.1" 400 36
 INFO 2025-07-09 23:18:22,577 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 10:43:08,370 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 10:48:08,434 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 10:50:34,813 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 10:51:41,527 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 12:22:30,412 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 14:56:45,976 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 14:58:35,601 basehttp "OPTIONS /api/auth/login/user/ HTTP/1.1" 200 0
+WARNING 2025-07-10 14:58:38,404 log Unauthorized: /api/auth/login/user/
+WARNING 2025-07-10 14:58:38,408 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
+WARNING 2025-07-10 14:58:40,727 log Unauthorized: /api/auth/login/user/
+WARNING 2025-07-10 14:58:40,729 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
+WARNING 2025-07-10 14:58:42,893 log Unauthorized: /api/auth/login/user/
+WARNING 2025-07-10 14:58:42,894 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
+WARNING 2025-07-10 14:59:26,919 log Unauthorized: /api/auth/login/user/
+WARNING 2025-07-10 14:59:26,920 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
+WARNING 2025-07-10 14:59:29,268 log Unauthorized: /api/auth/login/user/
+WARNING 2025-07-10 14:59:29,269 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
+WARNING 2025-07-10 14:59:31,513 log Unauthorized: /api/auth/login/user/
+WARNING 2025-07-10 14:59:31,514 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
+WARNING 2025-07-10 14:59:56,490 log Unauthorized: /api/auth/login/user/
+WARNING 2025-07-10 14:59:56,491 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
+WARNING 2025-07-10 14:59:58,559 log Unauthorized: /api/auth/login/user/
+WARNING 2025-07-10 14:59:58,567 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
+WARNING 2025-07-10 15:00:00,648 log Unauthorized: /api/auth/login/user/
+WARNING 2025-07-10 15:00:00,650 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
+INFO 2025-07-10 15:15:40,651 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 15:17:07,285 basehttp "POST /api/auth/login/user/ HTTP/1.1" 200 656
+INFO 2025-07-10 15:17:09,195 basehttp "OPTIONS /api/late-login-reasons/ HTTP/1.1" 200 0
+INFO 2025-07-10 15:17:09,195 basehttp "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-07-10 15:17:09,197 basehttp "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+INFO 2025-07-10 15:17:09,208 basehttp "OPTIONS /api/late-login-reasons/ HTTP/1.1" 200 0
+INFO 2025-07-10 15:17:09,405 basehttp "GET /api/auth/me/ HTTP/1.1" 200 135
+WARNING 2025-07-10 15:17:09,409 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 15:17:09,413 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+INFO 2025-07-10 15:17:09,533 basehttp "GET /api/auth/me/ HTTP/1.1" 200 135
+WARNING 2025-07-10 15:17:09,617 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 15:17:09,618 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+INFO 2025-07-10 15:17:24,548 basehttp "OPTIONS /api/employees/logout/ HTTP/1.1" 200 0
+WARNING 2025-07-10 15:17:24,550 log Method Not Allowed: /api/employees/logout/
+WARNING 2025-07-10 15:17:24,551 basehttp "POST /api/employees/logout/ HTTP/1.1" 405 41
+INFO 2025-07-10 15:17:31,288 basehttp "POST /api/auth/login/user/ HTTP/1.1" 200 656
+INFO 2025-07-10 15:17:32,410 basehttp "OPTIONS /api/employees/today/ HTTP/1.1" 200 0
+INFO 2025-07-10 15:17:32,414 basehttp "OPTIONS /api/employees/today/ HTTP/1.1" 200 0
+INFO 2025-07-10 15:17:32,415 basehttp "OPTIONS /api/employees/ HTTP/1.1" 200 0
+INFO 2025-07-10 15:17:32,416 basehttp "OPTIONS /api/employees/ HTTP/1.1" 200 0
+WARNING 2025-07-10 15:17:32,588 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 15:17:32,599 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+WARNING 2025-07-10 15:17:32,618 log Not Found: /api/employees/today/
+WARNING 2025-07-10 15:17:32,621 basehttp "GET /api/employees/today/ HTTP/1.1" 404 23
+INFO 2025-07-10 15:17:32,636 basehttp "GET /api/employees/ HTTP/1.1" 200 7781
+WARNING 2025-07-10 15:17:32,719 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 15:17:32,726 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+WARNING 2025-07-10 15:17:32,861 log Not Found: /api/employees/today/
+WARNING 2025-07-10 15:17:32,871 basehttp "GET /api/employees/today/ HTTP/1.1" 404 23
+INFO 2025-07-10 15:17:32,939 basehttp "GET /api/employees/ HTTP/1.1" 200 7781
+WARNING 2025-07-10 15:17:45,257 log Method Not Allowed: /api/employees/logout/
+WARNING 2025-07-10 15:17:45,271 basehttp "POST /api/employees/logout/ HTTP/1.1" 405 41
+INFO 2025-07-10 15:17:50,481 basehttp "POST /api/auth/login/user/ HTTP/1.1" 200 656
+INFO 2025-07-10 15:17:51,707 basehttp "GET /api/employees/ HTTP/1.1" 200 7781
+WARNING 2025-07-10 15:17:51,709 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 15:17:51,749 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+WARNING 2025-07-10 15:17:51,815 log Not Found: /api/employees/today/
+WARNING 2025-07-10 15:17:51,818 basehttp "GET /api/employees/today/ HTTP/1.1" 404 23
+INFO 2025-07-10 15:17:51,902 basehttp "GET /api/employees/ HTTP/1.1" 200 7781
+WARNING 2025-07-10 15:17:51,940 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 15:17:51,944 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+WARNING 2025-07-10 15:17:51,993 log Not Found: /api/employees/today/
+WARNING 2025-07-10 15:17:51,994 basehttp "GET /api/employees/today/ HTTP/1.1" 404 23
+WARNING 2025-07-10 15:18:37,021 log Method Not Allowed: /api/employees/logout/
+WARNING 2025-07-10 15:18:37,022 basehttp "POST /api/employees/logout/ HTTP/1.1" 405 41
+INFO 2025-07-10 15:18:43,899 basehttp "OPTIONS /api/auth/password-reset/ HTTP/1.1" 200 0
+WARNING 2025-07-10 15:18:44,177 log Not Found: /api/auth/password-reset/
+WARNING 2025-07-10 15:18:44,178 basehttp "POST /api/auth/password-reset/ HTTP/1.1" 404 22635
+WARNING 2025-07-10 15:18:52,599 log Not Found: /api/auth/password-reset/
+WARNING 2025-07-10 15:18:52,600 basehttp "POST /api/auth/password-reset/ HTTP/1.1" 404 22635
+INFO 2025-07-10 15:25:30,039 basehttp "POST /api/auth/login/user/ HTTP/1.1" 200 656
+INFO 2025-07-10 15:25:31,816 basehttp "GET /api/auth/me/ HTTP/1.1" 200 135
+WARNING 2025-07-10 15:25:31,819 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 15:25:31,823 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+WARNING 2025-07-10 15:25:31,922 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 15:25:31,924 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+INFO 2025-07-10 15:25:31,937 basehttp "GET /api/auth/me/ HTTP/1.1" 200 135
+INFO 2025-07-10 15:25:58,498 basehttp "POST /api/auth/login/user/ HTTP/1.1" 200 656
+WARNING 2025-07-10 15:25:59,712 log Not Found: /api/employees/today/
+WARNING 2025-07-10 15:25:59,717 basehttp "GET /api/employees/today/ HTTP/1.1" 404 23
+WARNING 2025-07-10 15:25:59,731 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 15:25:59,737 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+INFO 2025-07-10 15:25:59,790 basehttp "GET /api/employees/ HTTP/1.1" 200 7781
+WARNING 2025-07-10 15:25:59,859 log Not Found: /api/employees/today/
+WARNING 2025-07-10 15:25:59,868 basehttp "GET /api/employees/today/ HTTP/1.1" 404 23
+WARNING 2025-07-10 15:25:59,908 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 15:25:59,910 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+INFO 2025-07-10 15:25:59,990 basehttp "GET /api/employees/ HTTP/1.1" 200 7781
+INFO 2025-07-10 15:26:30,813 basehttp "GET /api/employees/ HTTP/1.1" 200 7781
+WARNING 2025-07-10 15:26:30,816 log Not Found: /api/employees/today/
+WARNING 2025-07-10 15:26:30,820 basehttp "GET /api/employees/today/ HTTP/1.1" 404 23
+WARNING 2025-07-10 15:26:30,844 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 15:26:30,860 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+WARNING 2025-07-10 15:26:30,962 log Not Found: /api/employees/today/
+WARNING 2025-07-10 15:26:30,988 basehttp "GET /api/employees/today/ HTTP/1.1" 404 23
+INFO 2025-07-10 15:26:31,010 basehttp "GET /api/employees/ HTTP/1.1" 200 7781
+WARNING 2025-07-10 15:26:31,060 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 15:26:31,061 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+INFO 2025-07-10 16:56:25,234 basehttp "POST /api/auth/login/user/ HTTP/1.1" 200 656
+INFO 2025-07-10 16:56:27,014 basehttp "GET /api/auth/me/ HTTP/1.1" 200 135
+WARNING 2025-07-10 16:56:27,020 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 16:56:27,027 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+INFO 2025-07-10 16:56:27,116 basehttp "GET /api/auth/me/ HTTP/1.1" 200 135
+WARNING 2025-07-10 16:56:27,143 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 16:56:27,145 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+WARNING 2025-07-10 16:56:34,077 log Unauthorized: /api/auth/login/user/
+WARNING 2025-07-10 16:56:34,078 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
+WARNING 2025-07-10 16:56:35,533 log Unauthorized: /api/auth/login/user/
+WARNING 2025-07-10 16:56:35,534 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
+WARNING 2025-07-10 16:56:36,904 log Unauthorized: /api/auth/login/user/
+WARNING 2025-07-10 16:56:36,905 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63

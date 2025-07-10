@@ -1,4 +1,4 @@
-
+ 
 import React, { useEffect, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -26,12 +26,12 @@ import {
   Visibility as VisibilityIcon,
   VisibilityOff as VisibilityOffIcon
 } from "@mui/icons-material";
-import logo from '../assets/logo.png'; // adjust the path based on your folder structure
+import logo from '../assets/logo.png';
  
 import {
 } from "@mui/icons-material";
 import { useAuth } from "../context/AuthContext";
-import illustration from "../assets/login-illustration.png"; // your left side image
+import illustration from "../assets/login-illustration.png";
  
 const Login = ({ onLoginSuccess }) => {
   const navigate = useNavigate();
@@ -89,43 +89,43 @@ const Login = ({ onLoginSuccess }) => {
     setErrorMsg("");
     try {
       // Determine the correct API endpoint based on login mode
-      const endpoint = loginMode === 'admin' 
+      const endpoint = loginMode === 'admin'
         ? 'http://localhost:8000/api/auth/login/admin/'
         : 'http://localhost:8000/api/auth/login/user/';
-
+ 
       const response = await fetch(endpoint, {
         method: "POST",
-        headers: { 
+        headers: {
           "Content-Type": "application/json",
           "Accept": "application/json"
         },
-        body: JSON.stringify({ 
-          email, 
+        body: JSON.stringify({
+          email,
           password,
           // Include username as email if needed by the API
           username: email
         }),
         credentials: 'include' // Important for cookies/session if using them
       });
-
+ 
       const data = await response.json();
-      
+     
       if (!response.ok) {
         throw new Error(
-          data.detail || 
-          data.message || 
-          (data.email ? data.email[0] : '') || 
-          (data.password ? data.password[0] : '') || 
+          data.detail ||
+          data.message ||
+          (data.email ? data.email[0] : '') ||
+          (data.password ? data.password[0] : '') ||
           'Login failed. Please check your credentials.'
         );
       }
-
+ 
       if (data.access && data.refresh) {
         // Store tokens and user data
         localStorage.setItem("access_token", data.access);
         localStorage.setItem("refresh_token", data.refresh);
         localStorage.setItem("user_email", email);
-        
+       
         // Store user data if available
         if (data.user) {
           localStorage.setItem("user_id", data.user.id);
@@ -133,9 +133,9 @@ const Login = ({ onLoginSuccess }) => {
           localStorage.setItem("is_staff", data.user.is_staff);
           localStorage.setItem("is_superuser", data.user.is_superuser);
         }
-
-        return { 
-          success: true, 
+ 
+        return {
+          success: true,
           role: loginMode,
           user: data.user || null
         };
@@ -153,31 +153,30 @@ const Login = ({ onLoginSuccess }) => {
  
   const handleLogin = async (e) => {
     e.preventDefault();
-    
+ 
     const validationErrors = validateForm();
     setErrors(validationErrors);
-    
+ 
     if (Object.keys(validationErrors).length > 0) {
       setErrorMsg("Please correct the errors above.");
       return;
     }
-    
+ 
     if (!formData.password) {
       setErrorMsg("Password is required");
       return;
     }
-
+ 
+    setLoading(true);
+    setErrorMsg("");
     try {
-      setLoading(true);
-      setErrorMsg("");
-      
       // Use the auth context login function
       await authLogin(
         formData.email,
         formData.password,
         formData.rememberMe
       );
-
+ 
       // Store remember me preference
       if (formData.rememberMe) {
         localStorage.setItem('rememberMe', 'true');
@@ -186,25 +185,27 @@ const Login = ({ onLoginSuccess }) => {
         localStorage.removeItem('rememberMe');
         localStorage.removeItem('savedEmail');
       }
-
+ 
       // Show success message and redirect
       setErrorMsg("Login successful! Redirecting...");
-      
+ 
       // Redirect based on login mode
-      const redirectPath = formData.loginMode === 'admin' 
-        ? '/AdminDashboard' 
+      const redirectPath = formData.loginMode === 'admin'
+        ? '/AdminDashboard'
         : '/AttendanceCard';
-        
+ 
       setTimeout(() => {
         navigate(redirectPath);
       }, 1000);
     } catch (err) {
       console.error('Login error:', err);
       setErrorMsg(
-        err.message.includes('401') 
+        err.message && err.message.includes('401')
           ? 'Invalid email or password. Please try again.'
           : err.message || 'An error occurred during login. Please try again.'
       );
+    } finally {
+      setLoading(false);
     }
   };
  
@@ -488,3 +489,4 @@ const Login = ({ onLoginSuccess }) => {
 };
  
 export default Login;
+ 
