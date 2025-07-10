@@ -2921,3 +2921,12 @@ WARNING 2025-07-10 16:56:35,533 log Unauthorized: /api/auth/login/user/
 WARNING 2025-07-10 16:56:35,534 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
 WARNING 2025-07-10 16:56:36,904 log Unauthorized: /api/auth/login/user/
 WARNING 2025-07-10 16:56:36,905 basehttp "POST /api/auth/login/user/ HTTP/1.1" 401 63
+INFO 2025-07-10 17:07:06,961 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 17:07:12,084 basehttp "OPTIONS /api/auth/login/user/ HTTP/1.1" 200 0
+INFO 2025-07-10 17:07:13,485 basehttp "POST /api/auth/login/user/ HTTP/1.1" 200 656
+WARNING 2025-07-10 17:07:14,977 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 17:07:14,978 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+INFO 2025-07-10 17:07:14,988 basehttp "GET /api/auth/me/ HTTP/1.1" 200 135
+WARNING 2025-07-10 17:07:15,123 log Forbidden: /api/late-login-reasons/
+WARNING 2025-07-10 17:07:15,131 basehttp "GET /api/late-login-reasons/ HTTP/1.1" 403 65
+INFO 2025-07-10 17:07:15,151 basehttp "GET /api/auth/me/ HTTP/1.1" 200 135
